@@ -94,6 +94,12 @@ $ cd build-target               # this is where Flink is installed to
 $ ./bin/start-cluster.sh  # Start Flink
 {% endhighlight %}
 
+If you have installed via Homebrew, you can find this script at:
+
+{% highlight bash %}
+$ /usr/local/Cellar/apache-flink/(version)/libexec/bin/start-local.sh
+{% endhighlight %}
+
 Check the __JobManager's web frontend__ at [http://localhost:8081](http://localhost:8081) and make sure everything is up and running. The web frontend should report a single available TaskManager instance.
 
 <a href="{{ site.baseurl }}/page/img/quickstart-setup/jobmanager-1.png" ><img class="img-responsive" src="{{ site.baseurl }}/page/img/quickstart-setup/jobmanager-1.png" alt="JobManager: Overview"/></a>
